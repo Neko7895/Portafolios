@@ -1,0 +1,271 @@
+a {
+    padding-left: 90px;
+    text-decoration: none;
+    font-family: "Calibri light", sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+
+/*Animación de las opciones del nav bar*/
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover.active {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+
+/*Colores de las opciones del nav bar*/
+
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+.btn-hover.color-4 {
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+
+.btn-hover.color-7 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+.btn-hover.color-10 {
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+
+
+/*Fin*/
+
+.port_jn {
+    margin-top: 30px;
+    margin-left: 285px;
+}
+
+html {
+    background: linear-gradient(to right, #201b4a, #311e5c, #6b1b96);
+}
+
+h1 {
+    margin-left: 80px;
+    margin-top: 90px;
+    margin-bottom: 15px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient( #f74d88, #f7e94d);
+}
+
+p {
+    margin-left: 80px;
+    margin-right: 550px;
+    text-align: justify;
+    font-family: "Calibri", sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+img {
+    margin-left: 850px;
+    margin-top: -150px;
+    border-radius: 70px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    -ms-border-radius: 70px;
+    -o-border-radius: 70px;
+    width: 460px;
+    height: 300px;
+}
+
+.info_gen {
+    margin-left: 80px;
+}
+
+#main_tab {
+    color: #f74d88;
+    font-family: "Calibri", sans-serif;
+}
+
+tr.tab_title {
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+tr.tab_info {
+    font-family: "Calibri light", sans serif;
+    font-size: 15px;
+    color: white;
+}
+
+td {
+    padding-right: 55px;
+}
+
+table.info {
+    margin-top: -140px;
+    border: 6px solid #f74d88;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+caption {
+    text-align: left;
+}
+
+.buttons {
+    margin-left: 200px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+
+/*Información de los botones interactivos*/
+
+
+/*Contenido por boton*/
+
+.tabcontent {
+    margin-left: 330px;
+}
+
+h3 {
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: -5px;
+}
+
+#button1 {
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    margin-left: 170px;
+}
+
+#button2 {
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    margin-left: 170px;
+}
+
+#button3 {
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    margin-left: 63px;
+}
+
+#button4 {
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B);
+    margin-left: 35px;
+}
+
+.info_button {
+    margin-left: 80px;
+    margin-right: 650px;
+    text-align: justify;
+    font-family: "Calibri", sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+
+/*Limpia los flotantes después de cada*/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+ul {
+    margin-left: 80px;
+    margin-right: 300px;
+    text-align: justify;
+    font-family: "Calibri", sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+footer {
+    background-color: #201b4a;
+    width: 1338px;
+    height: 120px;
+    margin-bottom: -30px;
+}
+
+.foot {
+    background-color: #201b4a;
+    width: 1338px;
+    height: 120px;
+    margin-bottom: -30px;
+}
+
+.welcome {
+    font-family: "Calibri", sans-serif;
+    font-size: 130px;
+    color: white;
+    margin-left: 360px;
+    margin-bottom: -10px;
+}
+
+.welcome_ii {
+    font-family: "Calibri light", sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-left: 360px;
+    margin-bottom: 20px;
+}
+
+select {
+    margin-left: 360px;
+    margin-bottom: 166px;
+}
