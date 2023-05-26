@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleport.css">
+    <title>Portafolio</title>
+</head>
+
+<body>
+
+    <nav>
+        <table class="port_jn">
+            <tr>
+                <th><a href="home.html">Home</a></th>
+                <th><a href="portafolio_johnny.html">Johnny Cheng</a></th>
+                <th><a href="portafolio_nicole.html">Nicole Valdés</a></th>
+                <th><a href="portafolio_yeshua.html">Yeshua Zapata</a></th>
+            </tr>
+        </table>
+    </nav>
+
+    <section class="general">
+        <h1>Nicole Valdés</h1>
+        <p>Actualmente me encuentro cursando la Carrera de Ingeniería de Software en la Universidad de Tecnológica de Panamá en el Campus Víctor Levi Sasso. Mi mayor vocación es llegar a complementar ambos mundos de mis conocimientos y poder explotarlos
+            en el extranjero sin muchas limitantes. Soy aficionada a los videojuegos y anime. Paso en mi tiempo libre creando contenido para próximamente hacerlo público y emprender con ilustradora freelancer a mayor escala.</p>
+        <img src="nicole.png">
+    </section>
+
+    <section class="info_gen">
+        <table class="info">
+            <caption>
+                <h2 id="main_tab">Información general</h2>
+            </caption>
+
+            <tr class="tab_title">
+                <td></td>
+                <td>Edad:</td>
+                <td>Nacimiento:</td>
+                <td>Cédula:</td>
+                <td>Idiomas:</td>
+                <td>País:</td>
+            </tr>
+
+            <tr class="tab_info">
+                <td></td>
+                <td>20</td>
+                <td>08/07/2002</td>
+                <td>8-987-2165</td>
+                <td>Inglés - Intermedio</td>
+                <td>Panamá</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="tablinks">
+        <div class="buttons">
+            <button class="btn-hover color-3" onmouseover="openInfo(event, 'Skills')">Skills</button>
+            <button class="btn-hover color-4" onmouseover="openInfo(event, 'Soft Skills')">Soft Skills</button>
+            <button class="btn-hover color-7" onmouseover="openInfo(event, 'Tools EXP')">Tools EXP</button>
+            <button class="btn-hover color-10" onmouseover="openInfo(event, 'Extras')">Extras</button>
+        </div>
+    </section>
+
+    <div id="Skills" class="tabcontent">
+        <h3 id="button1">Habilidades adquiridas</h3>
+        <p class="info_button">Me desenvuelvo en las siguientes áreas:</p>
+        <ul>
+            <li>Diseño gráfico freelancer</li>
+            <ul>
+                <li>Banners</li>
+                <li>Logos</li>
+                <li>Portadas</li>
+                <li>Entre otros...</li>
+            </ul>
+            <li>Ilustraciones digitales</li>
+            <ul>
+                <li>Personajes 2D y 3D</li>
+                <li>Wallpapers</li>
+                <li>Stickers</li>
+                <li>Patrones</li>
+                <li>Técnicas cartoon, anime, hiperealismo, abstracto, etc</li>
+            </ul>
+            <li>Desarrollo, soporte y mantenimiento web - freelancer</li>
+            <li>Manejo de desarrollo front-end y back-end</li>
+        </ul>
+    </div>
+
+    <div id="Soft Skills" class="tabcontent">
+        <h3 id="button2">Habilidades trabajadas</h3>
+        <p class="info_button">En entorno laboral y social</p>
+        <ul>
+            <li>Paciencia y empatía</li>
+            <li>liderazgo de equipo</li>
+            <li>Honestidad y sinceridad</li>
+            <li>Puntualidad y responsabilidad</li>
+            <li>Otros...</li>
+        </ul>
+    </div>
+
+    <div id="Tools EXP" class="tabcontent">
+        <h3 id="button3">Conocimiento en herramientas tech</h3>
+        <p class="info_button">Herramientas a nivel Gráfico y de Programación</p>
+        <ul>
+            <li>Diseño Gráfico</li>
+            <ul>
+                <li>Clip Studio Paint</li>
+                <li>Adobe After Effects</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+            </ul>
+            <li>Programación y Desarrollo</li>
+            <ul>
+                <li>Bootstrap</li>
+                <li>HTML y CSS - Avanzado</li>
+                <li>JavaScript - Intermedio</li>
+                <li>Python - Avanzado</li>
+                <li>Java - Avanzado</li>
+                <li>C# y C++ - Intermedio</li>
+                <li>GitHub y herramientas Office (Avanzado)</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div id="Extras" class="tabcontent">
+        <h3 id="button4">Certificaciones, Proyectos, BootCamp</h3>
+        <p class="info_button">Actividades extracurriculares</p>
+        <ul>
+            <li>Participé en el Samsung Innovations Campus del 2021: Programación en Scratch y Arduino</li>
+            <li>Participé en el Samsung Innovations Campus del 2022: Programación y codificación</li>
+            <li>Gané junto a mi equipo en la Hackathon del SIC, Segundo lugar - Deep Thinkers</li>
+            <li>Participé en la Hackathon de Copa Airlines: Infrastructura como código</li>
+            <li>Actualmente curso el Alura - Oracle, orientado en Back-end a nivel avanzado</li>
+            <li>Participaré en la Hackathon de Copa Airlines 2023 de Kubernetes - 2 y 3 de Junio</li>
+            <li>Participé en SpaceApps de la NASA - Inconcluso</li>
+        </ul>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+    <script>
+        function openInfo(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <footer>
+        <table>
+            <tr>
+                <td><a href="home.html">Home</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="portafolio_johnny.html">Johnny Cheng</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="portafolio_nicole.html">Nicole Valdés</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="portafolio_yeshua.html">Yeshua Zapata</a></td>
+            </tr>
+        </table>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
