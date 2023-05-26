@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleport.css">
+    <title>Portafolio</title>
+</head>
+
+<body>
+
+    <nav>
+        <table class="port_jn">
+            <tr>
+                <th><a href="home.html">Home</a></th>
+                <th><a href="portafolio_johnny.html">Johnny Cheng</a></th>
+                <th><a href="portafolio_nicole.html">Nicole Valdés</a></th>
+                <th><a href="portafolio_yeshua.html">Yeshua Zapata</a></th>
+            </tr>
+        </table>
+    </nav>
+
+    <section class="general">
+        <h1>Yeshua Zapata</h1>
+        <p>Me gradué del Colegio Javier, actualmente curso mi tercer año en la carrera de Ingeniería en Software, próximamente quiero estudiar una Ingeniería Musical, me gusta la música, el anime, los videojuegos y los deportes. Mi deseo es poder juntar
+            mis conocimientos en esta carrera con los conocimientos que adquiera en la música pudiendo crear softwares únicos para su uso en esta área.</p>
+        <img src="1000013543.jfif">
+    </section>
+
+    <section class="info_gen">
+        <table class="info">
+            <caption>
+                <h2 id="main_tab">Información general</h2>
+            </caption>
+
+            <tr class="tab_title">
+                <td></td>
+                <td>Edad:</td>
+                <td>Nacimiento:</td>
+                <td>Cédula:</td>
+                <td>Idiomas:</td>
+                <td>País:</td>
+            </tr>
+
+            <tr class="tab_info">
+                <td></td>
+                <td>18</td>
+                <td>27/06/2004</td>
+                <td>8-1010-953</td>
+                <td>Inglés - Intermedio</td>
+                <td>Panamá</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="tablinks">
+        <div class="buttons">
+            <button class="btn-hover color-3" onmouseover="openInfo(event, 'Skills')">Skills</button>
+            <button class="btn-hover color-4" onmouseover="openInfo(event, 'Soft Skills')">Soft Skills</button>
+            <button class="btn-hover color-7" onmouseover="openInfo(event, 'Tools EXP')">Tools EXP</button>
+            <button class="btn-hover color-10" onmouseover="openInfo(event, 'Extras')">Extras</button>
+        </div>
+    </section>
+
+    <div id="Skills" class="tabcontent">
+        <h3 id="button1">Habilidades adquiridas</h3>
+        <p class="info_button">Me desenvuelvo en las siguientes áreas:</p>
+        <ul>
+            <li>Edición de Videos</li>
+            <ul>
+                <li>Grabación de Videoclips</li>
+                <li>Edición</li>
+            </ul>
+            <li>Edición de Imágenes</li>
+            <li>Edición de Audio</li>
+            <li>Programación Intermedia de Back-end y Front-end</li>
+        </ul>
+    </div>
+
+    <div id="Soft Skills" class="tabcontent">
+        <h3 id="button2">Habilidades trabajadas</h3>
+        <p class="info_button">En entorno laboral y social:</p>
+        <ul>
+            <li>Liderazgo</li>
+            <li>Colaborativo</li>
+            <li>Responsabilidad</li>
+            <li>Puntualidad</li>
+            <li>Equitativo</li>
+        </ul>
+    </div>
+
+    <div id="Tools EXP" class="tabcontent">
+        <h3 id="button3">Conocimiento en herramientas</h3>
+        <ul>
+            <li>Diseño Gráfico:</li>
+            <ul>
+                <li>Adobe After Effects</li>
+            </ul>
+            <li>Programación:</li>
+            <ul>
+                <li>HTML y CSS - Básico</li>
+                <li>Python - Básico</li>
+                <li>C - Intermedio</li>
+                <li>GitHub - Básico</li>
+                <li>Herramientas de Office - Avanzado</li>
+            </ul>
+            <li>Edición de Video:</li>
+            <ul>
+                <li>Filmora</li>
+                <li>Camtasia</li>
+            </ul>
+            <li>Edición de Imágenes:</li>
+            <ul>
+                <li>PicsArt</li>
+                <li>Canva</li>
+                <li>Paint.NET</li>
+            </ul>
+            <li>Edición de Audio:</li>
+            <ul>
+                <li>FL Studio</li>
+                <li>Audacity</li>
+                <li>BandLab</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div id="Extras" class="tabcontent">
+        <h3 id="button4">Certificaciones, Proyectos, BootCamp</h3>
+        <p class="info_button">Actividades extracurriculares</p>
+        <ul>
+            <li>Participé en la Hackathon de Copa Airlines: Infrastructura como código.</li>
+            <li>Actualmente curso el Alura - Oracle, orientado en Front-end a nivel avanzado.</li>
+        </ul>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+    <script>
+        function openInfo(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <footer>
+        <table>
+            <tr>
+                <td><a href="home.html">Home</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="portafolio_johnny.html">Johnny Cheng</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="portafolio_nicole.html">Nicole Valdés</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="portafolio_yeshua.html">Yeshua Zapata</a></td>
+            </tr>
+        </table>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
