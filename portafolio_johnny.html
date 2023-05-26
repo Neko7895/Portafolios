@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleport.css">
+    <title>Portafolio</title>
+</head>
+
+<body>
+
+    <nav>
+        <table class="port_jn">
+            <tr>
+                <th><a href="home.html">Home</a></th>
+                <th><a href="portafolio_johnny.html">Johnny Cheng</a></th>
+                <th><a href="portafolio_nicole.html">Nicole Valdés</a></th>
+                <th><a href="portafolio_yeshua.html">Yeshua Zapata</a></th>
+            </tr>
+        </table>
+    </nav>
+
+    <section class="general">
+        <h1>Johnny Cheng</h1>
+        <p>Soy una persona activa, me gusta mucho los deportes, la adrenalina, videojuegos y el gimnasio.</p>
+        <img src="johnny.png">
+    </section>
+
+    <section class="info_gen">
+        <table class="info">
+            <caption>
+                <h2 id="main_tab">Información general</h2>
+            </caption>
+
+            <tr class="tab_title">
+                <td></td>
+                <td>Edad:</td>
+                <td>Nacimiento:</td>
+                <td>Cédula:</td>
+                <td>Idiomas:</td>
+                <td>País:</td>
+            </tr>
+
+            <tr class="tab_info">
+                <td></td>
+                <td>21</td>
+                <td>26/01/2002</td>
+                <td>3-749-123</td>
+                <td>Inglés - Intermedio</td>
+                <td>Panamá</td>
+            </tr>
+
+            <tr class="tab_info">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Mandarín - Básico</td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="tablinks">
+        <div class="buttons">
+            <button class="btn-hover color-3" onmouseover="openInfo(event, 'Skills')">Skills</button>
+            <button class="btn-hover color-4" onmouseover="openInfo(event, 'Soft Skills')">Soft Skills</button>
+            <button class="btn-hover color-7" onmouseover="openInfo(event, 'Tools EXP')">Tools EXP</button>
+            <button class="btn-hover color-10" onmouseover="openInfo(event, 'Extras')">Extras</button>
+        </div>
+    </section>
+
+    <div id="Skills" class="tabcontent">
+        <h3 id="button1">Habilidades adquiridas</h3>
+        <p class="info_button">Me desenvuelvo en las siguientes áreas:</p>
+        <ul>
+            <li>Solucionista</li>
+            <li>Estratega</li>
+            <li>Editor de vídeos</li>
+            <li>Edición de herramientas creativas</li>
+        </ul>
+    </div>
+
+    <div id="Soft Skills" class="tabcontent">
+        <h3 id="button2">Habilidades trabajadas</h3>
+        <p class="info_button">En entorno laboral y social</p>
+        <ul>
+            <li>Paciente</li>
+            <li>Proactivo</li>
+            <li>Mediático</li>
+            <li>Analítico</li>
+        </ul>
+    </div>
+
+    <div id="Tools EXP" class="tabcontent">
+        <h3 id="button3">Conocimiento en herramientas tech</h3>
+        <p class="info_button">Herramientas a nivel Gráfico y de Programación</p>
+        <ul>
+            <li>Visual Studio Code</li>
+            <li>Blender</li>
+            <li>Filmora</li>
+            <li>Camtasia</li>
+            <li>Adobe Premier</li>
+            <li>Unity & Unreal Engine</li>
+            <li>Python / Java</li>
+        </ul>
+    </div>
+
+    <div id="Extras" class="tabcontent">
+        <h3 id="button4">Certificaciones, Proyectos, BootCamp</h3>
+        <p class="info_button">Actividades extracurriculares</p>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+    <script>
+        function openInfo(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <footer>
+        <table>
+            <tr>
+                <td><a href="home.html">Home</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="portafolio_johnny.html">Johnny Cheng</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="portafolio_nicole.html">Nicole Valdés</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="portafolio_yeshua.html">Yeshua Zapata</a></td>
+            </tr>
+        </table>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
